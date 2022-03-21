@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Memory Game</title>
+    <meta name='description' content=''>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="title">
+        <center>
+            <h1>Memory Game</h1>
+            <br />
+            <form onsubmit="return startGame()">
+                <select name="level" id="level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="expert">Expert</option>
+                </select>
+                <button type="submit">START</button>
+            </form>
+            <br />
+            
+            <!--
+            <section class="memory-game">
+
+            </section>
+            -->
+            
+            <div id="gameContainer"></div>
+            
+            <div id="score">SCORE : 0</div>
+        </center>
+    </div>
+
+
+    <section class="memory-game" data-animal="aurelia">
+        <div class="memory-card">
+            <img class="front-face" src="img/alpaca.svg" alt="alpaca" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="aurelia">
+            <img class="front-face" src="img/alpaca.svg" alt="alpaca" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="vue">
+            <img class="front-face" src="img/armadillo.svg" alt="armadillo" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>  
+        
+        <div class="memory-card" data-animal="vue">
+            <img class="front-face" src="img/armadillo.svg" alt="armadillo" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="angular">
+            <img class="front-face" src="img/bat.svg" alt="bat" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="angular">
+            <img class="front-face" src="img/bat.svg" alt="bat" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="ember">
+            <img class="front-face" src="img/bee.svg" alt="bee" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="ember">
+            <img class="front-face" src="img/bee.svg" alt="bee" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="backbone">
+            <img class="front-face" src="img/bison.svg" alt="bison" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="backbone">
+            <img class="front-face" src="img/bison.svg" alt="bison" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+
+        <div class="memory-card" data-animal="react">
+            <img class="front-face" src="img/camel.svg" alt="camel" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+        
+        <div class="memory-card" data-animal="react">
+            <img class="front-face" src="img/camel.svg" alt="camel" />
+            <img class="back-face" src="img/cat.svg" alt="cat" />
+        </div>
+    
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
